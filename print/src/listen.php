@@ -1,3 +1,3 @@
 <?php
-
-echo file_get_contents("php://input");
+$resp = file_get_contents("php://input");
+echo $resp;
