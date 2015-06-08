@@ -1,0 +1,6 @@
+image: ubuntu
+build_script:
+        - sudo apt-get update
+        - sudo apt-get install php5 -y
+        - mv $RESOURCE/src/* .
+run: php -S 0.0.0.0:9100 ./listen.php
